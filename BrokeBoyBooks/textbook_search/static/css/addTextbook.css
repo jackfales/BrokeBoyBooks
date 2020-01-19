@@ -1,4 +1,50 @@
-.blue_box{
-    background-color: yellow;
-    
+.form-control::placeholder{
+    color: #2699FB;
+    opacity: 0.5;
+}
+
+.blue-box{
+    border-color: #2699FB;
+    border-width: 1px;
+}
+
+.col-form-label{
+    text-align: right;
+    font-size: 20px;
+}
+
+.form-group{
+    text-align: center;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.title-input{
+    width: 50%;
+}
+
+.author-input{
+    width: 50%;
+}
+
+.edition-input{
+    width: 75px;
+}
+
+.link-input{
+    width: 50%;
+}
+
+.submit-btn{
+    border-radius: 20px;
+    color: white;
+    background-color: #2699FB;
+    width: 12%;
+    font-size: 15px;
+}
+
+.submit-btn:hover{
+    background-color: white;
 }
