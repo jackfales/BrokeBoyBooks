@@ -2,12 +2,51 @@
 {% load static %}
 {% block pageContent %}
 
-<link rel="stylesheet" href="{% static 'css/addTextbook.css' %}">
-This is the addTextBook page
+<link rel="stylesheet" href="{% static '/css/addTextbook.css' %}">
 
+<h1 class="blue_box">hello</h1>
+<div class="container blue_box">
 
+    <form method="POST" class="form-control blue_box"> 
+        <div class="form-group"> 
+            <h2 class="form-head">Add a Textbook</h2>    
+        </div>   
+        
+        <div class="form-group row">
+            <label for="id_title" class="col-sm-2 col-form-label">Textbook Title:</label>
+            <div class="col-sm-10">
+                {{ form.title }}
+            </div>
 
+        </div>
+                    
+        <div class="form-group row">
+            <label for="id_author" class="col-sm-2 col-form-label">Author:</label>
+            <div class="col-sm-10">
+                {{ form.author }}
+            </div>
+        </div>
+                
+        <div class="form-group row">
+            <label for="id_edition" class="col-sm-2 col-form-label">Edition:</label>
+            <div class="col-sm-10">
+                {{ form.edition }}
+            </div>
+        </div>
+               
+        <div class="form-group row">
+            <label for="id_link" class="col-sm-2 col-form-label">Link to PDF:</label>
+            <div class="col-sm-10">
+                {{ form.link }}
+            </div>
+        </div>
+                   
+        <div class="form-group">
+            <button type="button" class="btn btn-light btn-small submit-btn">Submit</button>
+        </div>
 
+    </form>
+</div>
 
 
 {% endblock pageContent%}
