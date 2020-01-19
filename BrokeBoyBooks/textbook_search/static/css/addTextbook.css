@@ -1,3 +1,4 @@
+@import url("base.css");
 .form-control::placeholder{
     color: #2699FB;
     opacity: 0.5;
