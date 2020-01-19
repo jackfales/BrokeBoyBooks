@@ -23,13 +23,19 @@
 
 </head>
 
-<body>
-    
+<body>  
     <div>
+        <div class="navbar">
+            <b-navbar onclick="window.location = 'http://127.0.0.1:8000/textbook_search/addTextbook'" style="cursor: pointer;">
+              <img class="book-icon" src="http://www.clker.com/cliparts/3/V/W/a/m/C/book-icon-md.png" alt="book">
+              <b-navbar-brand  href="#">BrokeBoyBooks</b-navbar-brand>          
+            </b-navbar>
+        </div>
         {% block pageContent %}{% endblock pageContent %}
     </div>
 </body>
 <scripts>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
