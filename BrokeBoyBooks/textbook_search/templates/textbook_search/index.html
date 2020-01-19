@@ -1,0 +1,39 @@
+{% extends "textbook_search/base.html" %}
+{% load static %}
+{% block pageContent %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 align="center">Search for a Textbook</h1>
+    <p align="center">Welcome to Broke Boy Books: A place for you to find PDFs of your textbooks</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <input class="bar1" type="text" placeholder="Textbook Title">
+            </div>
+            <div class="col-2">
+                <input class="bar2" type="text" placeholder="Edition">
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn">Search</button>
+            </div>
+        </div>
+    </div>
+   
+    <br/>
+    <div align="center">
+        <a class="upload" href="upload a book">Have a book? Upload it here</a> <br>   
+        <a class="request" href="Request a Book">Need a book? Request it here</a>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+{% endblock pageContent%}
