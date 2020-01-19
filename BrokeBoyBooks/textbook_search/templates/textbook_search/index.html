@@ -4,34 +4,38 @@
 
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
-
-
 <div class="container">
-  <div class="jumbotron">
-    <h1 align="center">Search for a Textbook</h1>
-    <p align="center">Welcome to Broke Boy Books: A place for you to find PDFs of your textbooks</p>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <input class="bar1" type="text" placeholder="Textbook Title">
+    <form action="http://127.0.0.1:8000/textbook_search/displayTextbook" method="POST" class="form-control bg-light" id="search">  {% csrf_token %}
+        <div class="form-group pad-top"> 
+            <h1 align="center" class="form-head center">Search for a Textbook</h1> 
+            <p align="center" class="center">Welcome to Broke Boy Books: A place for you to find PDFs of your textbooks</p>
+        </div>   
+            
+        <div class="form-group row pad-top">
+            <div class="col-sm-7">
+                <input class="form-control form-input" type="search" placeholder="Textbook Title">
             </div>
-            <div class="col-2">
-                <input class="bar2" type="text" placeholder="Edition">
+
+            <div class="col-sm-2">
+                <input class="form-control form-input" type="number" placeholder="Edition">
             </div>
-            <div class="col-auto">
-                <button type="button" class="btn">Search</button>
+
+            <div class="col-sm-3">
+                <input type="submit" form="search" class="btn" value="Search">
             </div>
+    
         </div>
-    </div>
-   
-    <br/>
-    <div align="center">
-        <a class="upload" href="upload a book">Have a book? Upload it here</a> <br>   
-        <a class="request" href="Request a Book">Need a book? Request it here</a>
-    </div>
-  </div>
-  
+
+        <br/>
+        <div align="center" class="pad-down">
+            <a class="upload" href="upload a book">Have a book? Upload it here</a> <br>   
+            <a class="request" href="Request a Book">Need a book? Request it here</a>
+        </div>
+    </form>
+
+
 </div>
+
 
 
 
